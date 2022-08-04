@@ -19,7 +19,7 @@ import { translateShowFunc } from '../redux/style/styleSlice';
 import { Avatar } from '@mui/material';
 import { Link } from 'react-scroll';
 import HeaderName from '../container/HeaderName';
-
+import './Header.css'
 
 const drawerWidth = 340;
 
@@ -61,7 +61,7 @@ function DrawerAppBar(props) {
   const container = window !== undefined ? () => window().document.body : undefined;
   const headerName = ['y', 'u', '.', 'u', 'z']
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box className='header-container' sx={{ display: 'flex' }}>
       <AppBar component="nav" sx={{
         background:"aliceblue", 
         borderRadius: '0 0 170% 40%', 
@@ -83,7 +83,7 @@ function DrawerAppBar(props) {
           <Typography
             variant="h3"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ flexGrow: 1, display: {xs: 'none', sm: 'none', md: 'none' } }}
           >{headerName.map((item, i) => {
             return <HeaderName name={item} i={i}/>
           })}
@@ -115,6 +115,15 @@ function DrawerAppBar(props) {
               </Button>
               </Link>
             ))}
+           
+          </Box>
+          <Box sx={{position: 'fixed', 
+          right:'5%', 
+          display:'flex',
+          justifyContent:'center',
+          alignItems: 'center',
+          top:'-1px'
+          }} >
            {translateShow ?<>
            <Typography
            sx={{color: 'orange'}}
@@ -139,7 +148,6 @@ function DrawerAppBar(props) {
             </IconButton>
             </>
           }
-           
           </Box>
         </Toolbar>
       </AppBar>
@@ -153,7 +161,7 @@ function DrawerAppBar(props) {
             keepMounted: true
           }}
           sx={{
-            display: { xs: 'block', sm: 'none' },
+            display: { sm: 'block', md: 'none' },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
           }}
         >

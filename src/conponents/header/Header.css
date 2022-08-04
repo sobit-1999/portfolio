@@ -1,12 +1,4 @@
-.header-container{
-    background-color: aquamarine;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 15%;
-    padding-right: 5%;
-    /* color: darkslategray; */
-}
+
 
 .header-card{
     display: flex;
@@ -14,3 +6,15 @@
     align-items: center;
     font-family: 'Brush Script MT', cursive;
 }
+
+
+@media screen and (max-width: 992px) {
+    
+    .header-container{
+        
+    }
+}
+    
+    @media screen and (max-width: 600px) {
+
+    }

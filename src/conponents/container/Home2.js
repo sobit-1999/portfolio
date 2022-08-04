@@ -28,6 +28,9 @@ export default function Home2({img, name, i}) {
         transform: 'Skew(0deg, 0deg)',
         marginX: i
       }
+    },
+      "@media (min-width: 960px)": {
+ 
     }
     
    }}
