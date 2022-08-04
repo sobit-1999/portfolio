@@ -83,7 +83,7 @@ function DrawerAppBar(props) {
           <Typography
             variant="h3"
             component="div"
-            sx={{ flexGrow: 1, display: {xs: 'none', sm: 'none', md: 'none' } }}
+            sx={{ flexGrow: 1, display: {xs: 'none', sm: 'none', md: 'flex' } }}
           >{headerName.map((item, i) => {
             return <HeaderName name={item} i={i}/>
           })}
