@@ -1,0 +1,116 @@
+.img-card{
+    /* transform: rotate(270deg); Equal to rotateZ(45deg) */
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    animation: anime-img 5s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes anime-img {
+    0% {
+      /* transform: translateY(0px) */
+      transform: scale(1.2,1.2);
+    }
+    50% {
+      /* transform: translateY(15px) */
+      transform: scale(1.5,1.5);
+    }
+    100% {
+      /* transform: translateY(0px) */
+      transform: scale(1.2,1.2);
+    }
+  }
+.container{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    padding:15% 15% 50px 12%;
+    font-family: monospace	;
+    border-right: 0;
+  }
+  .name{
+  /* background-color: aliceblue; */
+/* color: rgb(6, 8, 11); */
+/* text-align: center; */
+font-size: 25px;  
+padding: 0 10%;
+color: rgb(4, 87, 4);
+}
+
+.name>h1{
+  color: chartreuse;
+/* color: orange;   */
+font-size: 35px;
+/* margin-bottom: 10px; */
+}
+
+.name> h2{
+    font-size: 25px;
+    margin-top: 10px;
+    /* font-size: 50px; */
+}
+.contact{
+  border-radius: 10px solid black;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 80px;
+  /* background-color: aliceblue; */
+}
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transition: 2s;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+.card-projects{
+text-align: center;
+margin-top: 50px;
+}
+
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  padding: 5%; 
+}
+
+@media screen and (max-width: 992px) {
+.container{
+  display: block;
+  /* height: 120%; */
+}
+.name>h1{
+  font-size: 30px;
+}
+
+.name> h2{
+  font-size: 20px;
+  margin-top: 10px;
+}
+.container>div{
+  margin: 50px;
+  transform: scale(0.8);
+  font-size: 30px;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .img-card{
+    margin-left: 90px;
+    margin-top: 120px;
+  }
+  .skills{
+    transform: scale(0.7);
+    padding: 0;
+    /* animation-name: none; */
+}
+}

@@ -1,0 +1,16 @@
+.header-container{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 5%;
+    /* color: darkslategray; */
+}
+
+.header-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Brush Script MT', cursive;
+}
