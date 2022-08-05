@@ -51,16 +51,15 @@ export default function Contanier() {
      </Button>
      </Link>
      
-   <Link to={translateShow?'Contact':'Aloqa' }   spy="true" smooth="true"><Button  sx={{
+ <a href='https:/www.canva.com/design/DAFIfozyMT8/XSJGPGo2SRa8l2zRMzitiQ/view?utm_content=DAFIfozyMT8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'><Button  sx={{
      backgroundColor: 'rgb(55, 45, 35)', 
      padding:2,
     //  marginX:5,
      borderRadius:5,
      color:'blue'
-     }}>{translateShow?'Resume':'Aloqa' }  {<ArrowForwardIcon  sx={{marginX:2}}/>}
+     }}>{translateShow?'Resume':'Malumot' }  {<ArrowForwardIcon  sx={{marginX:2}}/>}
      </Button>
-     </Link>
-   
+     </a>
       </div > 
         <img src={pr} className='img-card'/>
     </div>

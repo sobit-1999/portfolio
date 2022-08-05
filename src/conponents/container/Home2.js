@@ -30,7 +30,7 @@ export default function Home2({img, name, i}) {
       }
     },
       "@media (min-width: 960px)": {
- 
+       display: 'block'
     }
     
    }}
