@@ -115,6 +115,8 @@ margin-top: 50px;
   }
   .skills{
     transform: scale(0.8);
-    padding: 0;
+    display: block;
+    animation-name: none;
+    transform: Skew(0deg,0deg);
 }
 }

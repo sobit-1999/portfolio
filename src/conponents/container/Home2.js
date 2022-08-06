@@ -14,9 +14,9 @@ export default function Home2({img, name, i}) {
      border: ' none' ,
       transform: `Skew(${i}deg, ${i*10}deg)`,
      "&:hover": {
-      transition: '5s',
+      transition: '2s',
       animationName: "Hover",
-      animationDuration: '4s',
+      animationDuration: '2s',
       animationTimingFunction: 'linear',
       animationIterationCount: 'infinite',
       animationDirection: 'alternate', 
@@ -29,8 +29,10 @@ export default function Home2({img, name, i}) {
         marginX: i
       }
     },
-      "@media (min-width: 960px)": {
-       display: 'block'
+      "@media screen and (max-width: 700px)": {
+       background:"black",
+       margin:1,
+      transform: `Skew(0deg, 0deg)`,
     }
     
    }}
