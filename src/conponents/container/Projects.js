@@ -69,14 +69,14 @@ const itemData = [
     title: 'Restaran',
     link_github: 'https://github.com/sobit-1999/my-restaurant_app',
     link_code: 'https://codesandbox.io/s/github/sobit-1999/my-restaurant_app',
-    demo:''
+    demo:'https://i6sw4c.csb.app/'
   },
   {
     img: LotinKiril,
     title: 'Lotin Kiril',
     link_github: 'https://github.com/sobit-1999/lotin_kiril.git',
     link_code: 'https://codesandbox.io/s/github/sobit-1999/lotin_kiril',
-    demo:''
+    demo:'https://ufkj7p.csb.app/'
   },
   {
     img: Shop,
