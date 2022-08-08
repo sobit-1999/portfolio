@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import pr from '../img/programmer.svg'
+import Resume from '../img/resume.pdf'
 import './Container.css';
 import { useSelector, useDispatch } from 'react-redux'
 import { Button } from '@mui/material';
@@ -51,7 +52,7 @@ export default function Contanier() {
      </Button>
      </Link>
      
- <a href='https:/www.canva.com/design/DAFIfozyMT8/XSJGPGo2SRa8l2zRMzitiQ/view?utm_content=DAFIfozyMT8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'><Button  sx={{
+ <a href={Resume}><Button  sx={{
      backgroundColor: 'rgb(55, 45, 35)', 
      padding:2,
     //  marginX:5,
