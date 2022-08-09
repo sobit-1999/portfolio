@@ -18,8 +18,6 @@ export default function About({to}) {
     { img: Css, name: 'CSS'}, 
     { img: Js, name: 'JS'},
     { img: ReactImg, name: 'React'},
-    { img: Redux, name: 'Redux Toolkit'},
-    { img: Router, name: 'React Router'}
   ]
   useEffect(() => {
     Aos.init({ 
@@ -29,14 +27,14 @@ export default function About({to}) {
   return (
       <Card 
       sx={{
-        padding: "6% 10%",
+        padding: "6%",
         background: 'black',
         color: 'aliceblue',
       }}
       id={translateShow? 'About':'Men Haqimda'}> 
       <h1 style={{textAlign:'center'}}
-data-aos="fade-right"
-data-aos-easing="ease-in-sine"
+         data-aos="fade-right"
+        data-aos-easing="ease-in-sine"
 >{translateShow?'Skills':`Ko'nikmalar`}</h1>
         <div className='skills'>
       {imgName.map((item, i) => {return (

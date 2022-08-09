@@ -26,15 +26,11 @@
 .container{
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
     padding:15% 15% 50px 12%;
     font-family: monospace	;
     border-right: 0;
   }
   .name{
-  /* background-color: aliceblue; */
-/* color: rgb(6, 8, 11); */
-/* text-align: center; */
 font-size: 25px;  
 padding: 0 10%;
 color: rgb(4, 87, 4);
@@ -42,9 +38,7 @@ color: rgb(4, 87, 4);
 
 .name>h1{
   color: chartreuse;
-/* color: orange;   */
 font-size: 35px;
-/* margin-bottom: 10px; */
 }
 
 .name> h2{
@@ -83,6 +77,34 @@ margin-top: 50px;
   padding: 5%; 
 }
 
+.react-helper {
+  /* transition: .5s ease; */
+  transition: 50s;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 140px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.react-skills:hover .image {
+  opacity: 0.3;
+}
+
+.react-skills:hover .react-helper {
+  /* background-color: rgb(116, 142, 187); */
+  opacity: 1;
+  transition: 3s;
+  transition-duration: 3s;
+
+}
+
 @media screen and (max-width: 992px) {
 .container{
   display: block;
@@ -111,8 +133,8 @@ margin-top: 50px;
 @media screen and (max-width: 600px) {
   .skills{
     transform: scale(0.8);
-    display: block;
-    animation-name: none;
-    transform: Skew(0deg,0deg);
+    /* display: block; */
+    /* animation-name: none; */
+    /* transform: Skew(0deg,0deg); */
 }
 }

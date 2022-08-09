@@ -19,7 +19,7 @@ import { translateShowFunc } from '../redux/style/styleSlice';
 import { Avatar } from '@mui/material';
 import { Link } from 'react-scroll';
 import HeaderName from '../container/HeaderName';
-import './Header.css'
+// import './Header.css'
 
 const drawerWidth = 340;
 
@@ -39,9 +39,12 @@ function DrawerAppBar(props) {
 
 
   const drawer = (
-    <Box sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        yu.uz
+    <Box sx={{ 
+      textAlign: 'center',
+      color: 'green'
+      }}>
+      <Typography variant="h6" sx={{ my: 2}}>
+        <h1>yu.uz</h1>
       </Typography>
       <Divider />
       <List>
@@ -61,7 +64,7 @@ function DrawerAppBar(props) {
   const container = window !== undefined ? () => window().document.body : undefined;
   const headerName = ['y', 'u', '.', 'u', 'z']
   return (
-    <Box className='header-container' sx={{ display: 'flex' }}>
+    <Box  sx={{ display: 'flex' }}>
       <AppBar component="nav" sx={{
         background:"aliceblue", 
         borderRadius: '0 0 170% 40%', 
@@ -151,7 +154,11 @@ function DrawerAppBar(props) {
           </Box>
         </Toolbar>
       </AppBar>
-      <Box component="nav">
+      <Box component="nav"
+      sx={{
+        background: 'green'
+      }}
+      >
         <Drawer
           container={container}
           variant="temporary"

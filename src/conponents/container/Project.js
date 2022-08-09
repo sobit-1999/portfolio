@@ -30,7 +30,11 @@ sx={{
           alt="green iguana"
           />
        <CardContent>{yes? 
-          <Typography  gutterBottom variant="h4"
+          <Typography 
+          sx={{
+            fontFamily:'cursive'
+          }}
+          gutterBottom variant="h4"
            component="div">
             {item.title}
           </Typography>:
@@ -39,7 +43,7 @@ sx={{
           component="div" >
          <a href={item.link_github}> <IconButton sx={{color: 'green', "&:hover":{background:'green', color:'black'}}}><GitHubIcon /></IconButton></a>
          <a href={item.link_code}><IconButton sx={{color: 'green', "&:hover":{background:'green', color:'black'}}}><CodeIcon /></IconButton></a>
-         <a href={item.demo}><IconButton sx={{color: 'green', "&:hover":{ borderRadius:'15px',background:'green', color:'black'}}}>Demo</IconButton></a>  
+         <a href={item.demo}><IconButton sx={{fontFamily:'cursive',color: 'green', "&:hover":{ borderRadius:'15px',background:'green', color:'black'}}}>Demo</IconButton></a>  
           </Typography> 
           } 
         </CardContent>

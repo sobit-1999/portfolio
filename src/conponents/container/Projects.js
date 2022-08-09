@@ -12,7 +12,7 @@ import "aos/dist/aos.css";
 import { useSelector } from 'react-redux'
 
 
-export default function ActionAreaCard() {
+export default function Pragects() {
   
   const translateShow = useSelector((state) => state.style.translateShow)
 
