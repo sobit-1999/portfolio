@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 3s;
 }
 
 @keyframes anime-img {
@@ -131,10 +132,13 @@ margin-top: 50px;
 }
 
 @media screen and (max-width: 600px) {
-  .skills{
-    transform: scale(0.8);
-    /* display: block; */
-    /* animation-name: none; */
-    /* transform: Skew(0deg,0deg); */
+ 
+.container{
+  margin-top: 15% 5%;
+  font-size: 35px;
+}
+.img-card{
+  margin-left: 20%;
+  margin-top: 100px;
 }
 }
