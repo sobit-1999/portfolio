@@ -22,7 +22,7 @@ export default function Home2({img, name, i}) {
       animationIterationCount: 'infinite',
       animationDirection: 'alternate', 
       animationDelay:i/3+'s',
-      transform: 'Skew(0deg, 0deg) scale(1.5)',
+      transform: 'Skew(0deg, 0deg) scale(1.3)',
       marginX: i*2,
       zIndex:2
       // transform: 'scale(0.8)'
@@ -57,7 +57,7 @@ export default function Home2({img, name, i}) {
                     react.map((item, i) => {return<Typography         sx={{
                       fontFamily:'cursive',}}
                      gutterBottom variant="h5" component="div">
-                     {'<'+ item +'/>'}
+                     {'< '+ item +' />'}
                       </Typography>})
                  }
                   </Card>
