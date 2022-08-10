@@ -62,21 +62,21 @@ const itemData = [
     title: 'Kalkulyator',
     link_github: 'https://github.com/sobit-1999/kalkulyator_app.git',
     link_code:'https://codesandbox.io/s/github/sobit-1999/kalkulyator_app',
-    demo:'https://stj42r.csb.app/'
+    demo:'https://kalkulyator-three.vercel.app/'
   },
   {
     img: Restaran,
     title: 'Restaran',
     link_github: 'https://github.com/sobit-1999/my-restaurant_app',
     link_code: 'https://codesandbox.io/s/github/sobit-1999/my-restaurant_app',
-    demo:'https://i6sw4c.csb.app/'
+    demo:'https://restaurant-pvvfpkv9s-sobit-1999.vercel.app/'
   },
   {
     img: LotinKiril,
     title: 'Lotin Kiril',
     link_github: 'https://github.com/sobit-1999/lotin_kiril.git',
     link_code: 'https://codesandbox.io/s/github/sobit-1999/lotin_kiril',
-    demo:'https://ufkj7p.csb.app/'
+    demo:'https://lotin-sobit-1999.vercel.app/'
   },
   {
     img: Shop,
