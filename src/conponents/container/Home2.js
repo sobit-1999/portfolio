@@ -57,7 +57,7 @@ export default function Home2({img, name, i}) {
                     react.map((item, i) => {return<Typography         sx={{
                       fontFamily:'cursive',}}
                      gutterBottom variant="h5" component="div">
-                     {'< '+ item +' />'}
+                     { item }
                       </Typography>})
                  }
                   </Card>
