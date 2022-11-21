@@ -17,6 +17,7 @@ function App() {
   return (
     <Provider store={store}>
       <Header/>
+      <h1>Hello Sobit</h1>
       <Container />
      <Link to={to?'Home':'Asosiy'} spy="true" smooth="true">
       <ArrowUpwardIcon className='scroll-top' 
